@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../common/main_drawer.dart';
 
 class ProfileScreen extends StatelessWidget {
 	const ProfileScreen({super.key});
@@ -7,7 +8,7 @@ class ProfileScreen extends StatelessWidget {
 	Widget build(BuildContext context) {
 		return Scaffold(
 			appBar: AppBar(title: const Text('Profile')),
-			drawer: const Drawer(),
+			drawer: const MainDrawer(),
 			body: Padding(
 				padding: const EdgeInsets.all(24),
 				child: Column(

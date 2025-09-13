@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 
 import '../common/providers.dart';
+import '../common/main_drawer.dart'; // Import the new drawer
 
 class HomeScreen extends ConsumerWidget {
 	const HomeScreen({super.key});
@@ -18,13 +19,13 @@ class HomeScreen extends ConsumerWidget {
 					Padding(
 						padding: const EdgeInsets.only(right: 12),
 						child: Chip(
-							label: const Text('Att. 100%'),
+							label: const Text('Att. 94.7%'),
 							backgroundColor: Theme.of(context).colorScheme.primaryContainer,
 						),
 					),
 				],
 			),
-			drawer: const _MainDrawer(),
+			drawer: const MainDrawer(), // Use the new drawer
 			body: session.when(
 				data: (session) => session != null ? _buildContent(context) : _buildLoginPrompt(context),
 				loading: () => const Center(child: CircularProgressIndicator()),

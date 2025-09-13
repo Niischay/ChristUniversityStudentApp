@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../common/main_drawer.dart';
 
 class MarksScreen extends StatelessWidget {
 	const MarksScreen({super.key});
@@ -7,7 +8,7 @@ class MarksScreen extends StatelessWidget {
 	Widget build(BuildContext context) {
 		return Scaffold(
 			appBar: AppBar(title: const Text('Marks Card')),
-			drawer: const Drawer(),
+			drawer: const MainDrawer(),
 			body: ListView(
 				padding: const EdgeInsets.all(16),
 				children: const [

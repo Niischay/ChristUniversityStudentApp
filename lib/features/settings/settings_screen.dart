@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../common/main_drawer.dart';
 
 class SettingsScreen extends StatefulWidget {
 	const SettingsScreen({super.key});
@@ -14,7 +15,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 	Widget build(BuildContext context) {
 		return Scaffold(
 			appBar: AppBar(title: const Text('Settings')),
-			drawer: const Drawer(),
+			drawer: const MainDrawer(),
 			body: ListView(
 				children: [
 					const ListTile(title: Text('Theme')),

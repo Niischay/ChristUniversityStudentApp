@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../common/main_drawer.dart';
 
 class TimetableScreen extends StatelessWidget {
 	const TimetableScreen({super.key});
@@ -7,7 +8,7 @@ class TimetableScreen extends StatelessWidget {
 	Widget build(BuildContext context) {
 		return Scaffold(
 			appBar: AppBar(title: const Text('Time Table')),
-			drawer: const Drawer(),
+			drawer: const MainDrawer(),
 			body: ListView.builder(
 				padding: const EdgeInsets.all(16),
 				itemCount: 5,
